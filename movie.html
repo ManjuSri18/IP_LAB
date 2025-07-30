@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+</head>
+<body>
+    <center>
+        <h1>Movie Ticket Booking</h1>
+
+        <h3>Available Movies</h3>
+        <table border="1">
+            <tr>
+                <th>Movie</th>
+                <th>Theater</th>
+                <th>Location</th>
+                <th>Show Time</th>
+                <th>Price</th>
+		<th>Available Seats</th>
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>Sathyam Cinemas</td>
+                <td>Chennai</td>
+                <td>6:30 PM</td>
+                <td>₹180</td>
+		<td>18</td>
+            </tr>
+            <tr>
+                <td>SitaRamam</td>
+                <td>INOX</td>
+                <td>Madurai</td>
+                <td>9:00 PM</td>
+                <td>₹200</td>
+		<td>12</td>
+            </tr>
+        </table>
+
+        <h3>Book Your Movie Ticket</h3>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" required></td>
+                </tr>
+		<tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="movie">Movie Name:</label></td>
+                    <td><input type="text" id="movie" required></td>
+                </tr>
+                <tr>
+                    <td><label for="theater">Theater Name:</label></td>
+                    <td><input type="text" id="theater" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tickets">No. of Tickets:</label></td>
+                    <td><input type="number" id="tickets" min="1" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <br><input type="submit" value="Book Ticket">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Ticket Booking</title>
+</head>
+<body>
+    <center>
+        <h1>Bus Ticket Booking</h1>
+
+        <h3>Available Buses</h3>
+        <table border="1">
+            <tr>
+                <th>Bus Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Departure</th>
+                <th>Fare</th>
+		<th>Available Seats</th>
+            </tr>
+            <tr>
+                <td>SETC</td>
+                <td>Chennai</td>
+                <td>Salem</td>
+                <td>8:00 AM</td>
+                <td>₹350</td>
+		<td>20</td>
+            </tr>
+            <tr>
+                <td>TNSTC</td>
+                <td>Madurai</td>
+                <td>Coimbatore</td>
+                <td>6:00 PM</td>
+                <td>₹400</td>
+		<td>21</td>
+            </tr>
+        </table>
+
+        <h3>Book Your Bus Ticket</h3>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bus">Bus Name:</label></td>
+                    <td><input type="text" id="bus" required></td>
+                </tr>
+		<tr>
+                    <td><label for="from">From:</label></td>
+                    <td><input type="text" id="from" required></td>
+                </tr>
+		<tr>
+                    <td><label for="to">To:</label></td>
+                    <td><input type="text" id="to" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tickets">No. of Tickets:</label></td>
+                    <td><input type="number" id="tickets" min="1" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <br><input type="submit" value="Book Ticket">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

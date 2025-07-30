@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Ticket Booking</title>
+</head>
+<body>
+    <center>
+        <h1>Train Ticket Booking</h1>
+
+        <h3>Available Trains</h3>
+        <table border="1">
+            <tr>
+                <th>Train</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Departure</th>
+                <th>Price</th>
+                <th>Available Seats</th>
+            </tr>
+            <tr>
+                <td>Vaigai Express</td>
+                <td>Madurai</td>
+                <td>Chennai</td>
+                <td>7:15 AM</td>
+                <td>₹250</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Rock Fort Express</td>
+                <td>Trichy</td>
+                <td>Chennai</td>
+                <td>10:00 PM</td>
+                <td>₹300</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+        <h3>Book Your Train Ticket</h3>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="train">Train Name:</label></td>
+                    <td><input type="text" id="train" name="train" required></td>
+                </tr>
+		<tr>
+                    <td><label for="from">From:</label></td>
+                    <td><input type="text" id="from" name="from" required></td>
+                </tr>
+		<tr>
+                    <td><label for="to">To:</label></td>
+                    <td><input type="text" id="to" name="to" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tickets">Number of Tickets:</label></td>
+                    <td><input type="number" id="tickets" name="tickets" min="1" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <br>
+                        <input type="submit" value="Book Ticket">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
